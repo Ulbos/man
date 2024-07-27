@@ -63,6 +63,9 @@ text-decoration: none;
     text-align: right;
     color: #000;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .header-contacts__secondNum{
     font-weight: 500;
@@ -397,3 +400,332 @@ width: 285px;
 .botom{
     padding-bottom: 100px;
 }
+
+/*     kurtki-nasimar*/
+
+
+.tovar-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding-bottom: 100px;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 5 колонок одинаковой ширины */
+    gap: 10px; /* Расстояние между элементами */
+}
+
+.grid-item {
+    background-color: #f1f1f1; /* Цвет фона для визуализации */
+    padding: 10px; /* Внутренние отступы */
+}
+
+.item1 {
+    grid-column: span 4; /* Первая картинка занимает все 5 колонок */
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto; /* Картинки будут масштабироваться */
+}
+.tovar-btn{
+    width: 285px;
+    
+}
+.img-radio{
+    padding-bottom: 40px;
+}
+.tovar-desc p{
+    font-weight: 400;
+font-size: 15px;
+color: #818181;
+margin-bottom: 0;
+}
+.tovar-desc {
+    padding-top:40px ;
+}
+.tovar-text__articul{
+    font-weight: 700;
+font-size: 15px;
+color: #000;
+}
+.tovar-sizing{
+    padding: 0;
+    padding-bottom: 40px;
+}
+
+/*  about страица */
+
+.about-title{
+    font-weight: 600;
+font-size: 40px;
+color: #1e1e1e;
+}
+.about-desc{
+    font-weight: 250;
+font-size: 40px;
+color: #1e1e1e;
+padding-top: 70px;
+padding-bottom: 40px;
+}
+.about-melkie{
+    font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #818181;
+}
+.about-iin__text{
+    font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #000;
+}
+.about-iin{
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.about-item{
+    list-style-type: circle;
+    font-weight: 400;
+font-size: 25px;
+line-height: 150%;
+color: #000;
+}
+.about-item-line{
+    padding-top: 50px;
+}
+.about-text__bottom{
+    padding-bottom: 100px;
+}
+.about-first{
+    padding-top: 30px;
+}
+/*  оплата страница */
+.about-oplata{
+    font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #000;
+padding-top: 50px;
+padding-bottom: 100px;
+}
+.contacts-info{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+padding-bottom: 50px;
+padding-top: 40px;
+}
+.contacts-item__naming{
+    font-weight: 400;
+font-size: 25px;
+line-height: 150%;
+color: #000;
+}
+.contacts-item__text{
+    font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #818181;
+}
+.adress-moskow{
+    width: 80%;
+}
+.contacts-map{
+    padding-bottom: 100px;
+}
+.vozvrat-item{
+    font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #818181;
+list-style-type: circle;
+}
+.vozvrat-first{
+    font-weight: 400;
+font-size: 25px;
+line-height: 150%;
+color: #000;
+padding-top: 40px
+}
+.vozvrat-attention{
+    font-weight: 600;
+font-size: 40px;
+color: #1e1e1e;
+}
+.vozvrat-container__title{
+    padding-left: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+.vozvrat-desc{
+    font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #818181;
+}
+.vozvrat-li {
+    font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #818181;
+}
+
+
+/*     заказать старница*/ 
+.zakaz-title{
+    font-weight: 250;
+font-size: 30px;
+color: #1e1e1e;
+padding-top: 70px;
+padding-bottom: 40px;
+}
+.zakaz-tovar{
+    font-weight: 400;
+font-size: 25px;
+line-height: 150%;
+color: #000;
+}
+.zakaz-link{
+    list-style-type: circle;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #818181;
+}
+.zakaz-second{
+    font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #000;
+padding-bottom: 100px;
+}
+.zakaz-twostep{
+    padding-top: 0;
+}
+.zakaz-three{
+    font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #000
+}
+.zaka-bottom {
+    padding-bottom: 100px;
+}
+
+
+
+
+
+.sertificat-images img{
+    padding-right: 20px;
+}
+.sertificat-images{
+padding-top: 40px;
+padding-bottom: 100px;
+}
+
+
+@media screen  and (max-width:1400px){
+    .header-main__nav{
+        display: none;
+    }
+    .header-nav{
+        display: none;
+    }
+    .collection-cardswrap {
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .summer-content {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .man-cardsWrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media screen  and (min-width:1400px){
+    .modile-svg{
+display: none;
+    }
+}
+@media screen  and (max-width:1200px){
+    .search-container{
+        display: none;
+    }
+    .contacts-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .tovar-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .tovar-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    }
+@media screen  and (max-width:992px){
+
+    .footer-wrapper{
+        flex-wrap: wrap;
+    }
+}
+@media screen  and (max-width:768px){
+    .header-contacts{
+display: none;
+    }
+    .masi-log{
+        display: none;
+    }
+    .about-desc {
+      font-size: 30px;
+    }
+    .summer-title__h2, .span-summer{
+        font-size: 30px;
+    }
+    .collection-title, .collection-span{
+        font-size: 30px;
+
+    }
+    .collection-sizing{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+           }
+}
+@media screen  and (max-width:548px){
+    .contacts-item__naming {
+        font-size: 18px;
+    }
+    .contacts-item__text {
+        font-size: 16px;
+    }
+    .summer-title__h2, .span-summer{
+        font-size: 25px;
+    }
+    .collection-title, .collection-span{
+        font-size: 25px;
+
+    }
+    .about-desc {
+        font-size: 25px;
+      }
+      .vozvrat-li{
+        font-size: 16px;
+      }
+}
+
